@@ -41,10 +41,10 @@ define('SELECTED_AUTH_TYPE',AUTH_TYPE_LDAP);
 /************************************
  * MASTER Database configuration
  *************************************/
-define('DB_HOST', 'gophp.cs.dixie.edu');
-define('DB_USER', 'joe');
-define('DB_PASSWORD', 'c00l10');
-define('DB_DATABASE', 'gophp');
+define('DB_HOST', '');
+define('DB_USER', '');
+define('DB_PASSWORD', '');
+define('DB_DATABASE', '');
 define('DB_TABLE_PREFIX', 'php_console_');
 
 
@@ -53,10 +53,10 @@ define('DB_TABLE_PREFIX', 'php_console_');
  * right now they just happen to be the same
  * as above
  *************************************/
-define('APP_DB_HOST', 'gophp.cs.dixie.edu');
-define('APP_DB_USER', 'appman');
-define('APP_DB_PASSWORD', 'sc00byd00');
-define('APP_DB_DATABASE', 'app_gophp');
+define('APP_DB_HOST', '');
+define('APP_DB_USER', '');
+define('APP_DB_PASSWORD', '');
+define('APP_DB_DATABASE', '');
 
 //for use on help.php
 $SCHEMAS_TO_SEE = array('students', 'course', 'customers', 'comments', 'registration');
