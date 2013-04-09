@@ -1,0 +1,311 @@
+body, textarea, input, select {
+    font: 12px monospace;
+}
+
+body {
+    background: #eee;
+}
+
+input {
+    width: 50%;
+    margin: auto;
+    display: block;
+    height: 30px;
+    /*font-size: 20px;*/
+}
+
+a {
+    color: #88f;
+}
+
+.pageBtn{
+    width: 150px;
+    height: 30px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    background-color:#fff;
+    color: #000;
+}
+
+.pageBtn:hover{
+    background-color: #000;
+    color: #fff;
+}
+
+
+.output, .input, .output2{
+    border: 1px solid #aaa;
+    background: #fff;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    width: 800px;
+    padding: 5px 10px;
+    margin: 10px;
+}
+
+/*.output {
+    padding: 5px 10px;
+    margin: 10px;
+}*/
+
+/*.output2{
+    width: 800px;
+}*/
+
+.banner_div{
+    font: 30px monospace;
+    text-align: center;
+}
+
+.columns
+{
+    -moz-column-count:3; /* Firefox */
+    -webkit-column-count:3; /* Safari and Chrome */
+    column-count:3;
+
+    -moz-column-gap:40px; /* Firefox */
+    -webkit-column-gap:40px; /* Safari and Chrome */
+    column-gap:40px;
+    
+    width: 600px;
+    min-heigth: 250px;
+    max-height: 500px;
+}
+
+.output  ol{
+    width: 120px;
+    list-style: none;
+    padding:0px;
+    margin:0px;
+}
+.output  li{
+    white-space: nowrap;
+
+}
+
+.input {
+    margin: .5% 10px;
+}
+
+#div_form{
+    width: 800px;
+    padding: 5px 10px;
+    margin: 10px;
+}
+
+#mainPage{
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+
+.statusbar {
+    padding: 3px 5px;
+    background: #E8E8E8;
+    -webkit-border-bottom-left-radius: 5px;
+    -moz-border-radius-bottomleft: 5px;
+    border-bottom-left-radius: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+    -moz-border-radius-bottomright: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.statusbar .copy {
+    margin-left: 50px;
+    display: none;
+}
+#clippy {
+    position: relative;
+    top: 2px;
+    left: 0;
+}
+
+.aText{
+    width: 29%;
+    position: relative;
+    float: left;
+    -webkit-border-top-right-radius: 5px;
+    -moz-border-radius-topright: 5px;
+    border-top-right-radius: 5px;
+    border: 1px solid #aaa;
+}
+
+.mini{
+    height: 90px;
+}
+.maxi{
+    height: 180px;
+}
+
+.dLogin{
+    width: 29%;
+    height: 18px;
+    position: relative;
+    float: left;
+    border: 1px solid #aaa;
+}
+.dLogin *{
+    display: inline;
+}
+
+.aTextHeader{
+    font-weight:bold;
+}
+.aTextOther{
+
+}
+
+/* ace-editor requires to define styles by id (specificity) */
+.editor#editor {
+    float: left;
+    width: 70%;
+    height: 400px;
+    position: relative;
+    -webkit-border-top-left-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    border-top-left-radius: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    -moz-border-radius-bottomleft: 5px;
+    border-bottom-left-radius: 5px;
+
+
+}
+#editor .ace_gutter {
+    -webkit-border-top-left-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    border-top-left-radius: 5px;
+    color: red;
+}
+
+.output img.loader {
+    margin-bottom: -4px;
+}
+
+.help {
+    width: 33%;
+    float: left;
+    white-space: pre;
+    display: none;
+}
+
+.footer {
+    width: 800px;
+    text-align: center;
+    color: #aaa;
+    display: none;
+}
+
+select {
+    background: transparent;
+    width: 300px;
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    height: 34px;
+}
+
+.add{
+    padding: 1em;
+    font:80%/1 sans-serif;
+    width: 320px;
+}
+
+.add label{
+    float:left;
+    width:25%;
+    margin-right:0.5em;
+    padding-top:0.2em;
+    text-align:right;
+    font-weight:bold;
+}
+
+.centered{
+    width:301px; 
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+.q{
+    width: 300px;
+    height: 200px;
+    border: 3px solid #cccccc;
+    padding: 5px;
+    font-family: Tahoma, sans-serif;
+    text-align: left;
+}
+
+
+
+legend{
+    padding: 0.2em 0.5em;
+    border: 1px solid #cccccc;
+    color: #ccc;
+}
+
+.icon{
+    height: 32px;
+}
+
+.iconsmall{
+    height: 14px;
+}
+
+
+.columns li{
+    display: block;
+    /*border: 1px solid black;*/
+    width: 150px;
+}
+
+/*this is a dynamic dd created in pageFunctions.php*/
+#select_type{
+    color: #0000FF;
+    height: 20px;
+    width: 100px;
+    padding: 0;
+    margin: 0;
+    float:right;
+}
+
+#txtQuestionName{
+    width: 100px;
+    height: 20px;
+    float: right;
+    border:0;
+    padding: 0;
+}
+
+#container{
+    height: 400px;
+}
+
+#div_login, .login_input{
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    text-align: center;
+    border: 1px solid #aaa;
+    margin: 10px;
+    padding: 5px;
+    
+}
+
+#div_login{
+    width: 260px;
+    margin: 0px auto;
+}
+
+.login_input{
+        width: 220px;
+        margin: 10px auto;
+
+}
+
+/*ERRRORS*/
+.errors{
+    font: 15px monospace;
+    color: red;
+}
+

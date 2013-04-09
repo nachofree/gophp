@@ -1,0 +1,49 @@
+<?php
+
+/*MUST HAVES
+ * -------------------------------------
+ * 
+ * 
+ * Change test_database to use mysqli and rollbacks
+ * 
+ * 
+****** TIMEOUT FOR SCRIPTS???? see code execute_me function
+ * 
+ * SET UP Jail, cron job to copy new jail every hour?
+ * Jail should haave app database on it.
+ * 
+ * WHERE SHOULD I PUT ACTUAL DATABASE?
+ * 
+ * ADD textarea is too big
+ * This needs to run over ssl
+ * MORE QUESTIONS
+ * 
+ 
+ Results box: need to float text at top left of image. 
+
+ * Fifth Problem - Inserting into student
+    As part of the problem explanation you should probably give a field list so they know what to insert into.
+ 
+  
+ Don't want the page to display outputs if there are parse errors (or others for that matter)
+ * can i display outputs for session var if it is wrong?
+ 
+ * 
+ * 
+ * * 
+ * Nice features
+ * *--------------------------****
+ * 
+ * FIX add script to require everything, reset after everything was added or perhaps a popup asking if i want
+ * to add another.
+ * 
+ * check ace editor again to see if i need scrollbars?? whats up with that?
+ *  * MAYBE USE PHP RUNKIT http://in2.php.net/runkit
+ * 
+ * sortable results page? only admin can see?
+
+when viewing results for a user it would be nice to see that users name for whom we are viewing and have the add button ALWAYS in the banner
+ * when i am admin, no matter the page
+
+ */
+?>

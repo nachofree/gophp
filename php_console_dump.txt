@@ -1,0 +1,51 @@
+
+--
+-- Not dumping tablespaces as no INFORMATION_SCHEMA.FILES table on this server
+--
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `php_console_questions` (
+  `question_id` int(11) NOT NULL auto_increment,
+  `question_type` int(11) NOT NULL,
+  `question_text` text NOT NULL,
+  PRIMARY KEY  (`question_id`),
+  KEY `question_type` (`question_type`),
+  CONSTRAINT `php_console_questions_ibfk_1` FOREIGN KEY (`question_type`) REFERENCES `php_console_question_type` (`type_id`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+INSERT INTO `php_console_questions` VALUES (1,1,'asdf');
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `php_console_question_type` (
+  `type_id` int(11) NOT NULL auto_increment,
+  `type_val` varchar(20) NOT NULL,
+  PRIMARY KEY  (`type_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+INSERT INTO `php_console_question_type` VALUES (1,'session'),(2,'database'),(3,'output'),(4,'function');
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `php_console_students` (
+  `username` varchar(20) NOT NULL default '',
+  `fname` varchar(20) default NULL,
+  `lname` varchar(30) default NULL,
+  PRIMARY KEY  (`username`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+INSERT INTO `php_console_students` VALUES ('fread','ff','aa');
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `php_console_student_question` (
+  `student_id` varchar(20) NOT NULL default '',
+  `question_id` int(11) NOT NULL,
+  `num_attempts` int(11) NOT NULL default '0',
+  `last_modified` timestamp NOT NULL default CURRENT_TIMESTAMP,
+  `correct` tinyint(1) NOT NULL default '0',
+  `code` text NOT NULL,
+  PRIMARY KEY  (`student_id`,`question_id`),
+  KEY `question_id` (`question_id`),
+  CONSTRAINT `php_console_student_question_ibfk_1` FOREIGN KEY (`question_id`) REFERENCES `php_console_questions` (`question_id`) ON DELETE CASCADE ON UPDATE CASCADE,
+  CONSTRAINT `php_console_student_question_ibfk_2` FOREIGN KEY (`student_id`) REFERENCES `php_console_students` (`username`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+INSERT INTO `php_console_student_question` VALUES ('fread',1,3,'2012-05-14 16:56:20',3,'fff');
